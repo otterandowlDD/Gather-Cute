@@ -13,7 +13,7 @@ function submitForm(event){
     navigator.clipboard.writeText(inquiry).catch(() => {});
   }
 
-  messageBox.textContent = 'กำลังพาไป LINE @ nooning_nn 💚 ข้อความถูกเตรียมไว้ให้แล้ว สามารถวางในแชตได้เลย';
+  messageBox.textContent = 'กำลังพาไป LINE @nooning_nn 💚 ข้อความถูกเตรียมไว้ให้แล้ว สามารถวางในแชตได้เลย';
 
-  window.open('https://line.me/ti/p/~nooning_nn', '_blank', 'noopener,noreferrer');
+  window.open('https://line.me/ti/p/~@nooning_nn', '_blank', 'noopener,noreferrer');
 }
