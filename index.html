@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gather Cute — Cozy Events, Weddings, Flowers & Styling</title>
-  <meta name="description" content="Gather Cute รับจัดเซอร์ไพรส์ตามงบ งานแต่ง งานเลี้ยง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ และ special requests พร้อมช่วยหา venue และ vendor ให้ครบในที่เดียว" />
+  <title>Gather Cute — Surprise, Events, Flowers & Styling</title>
+  <meta name="description" content="Gather Cute รับจัดเซอร์ไพรส์ตามงบ งานแต่ง ดอกไม้ ปาร์ตี้ โต๊ะอาหาร และ special requests พร้อมช่วยหา venue และ vendor" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -15,10 +15,15 @@
     <nav class="nav container">
       <a class="brand" href="#top">Gather Cute</a>
       <div class="nav-links">
-        <a href="#surprise">Surprise</a>
-        <a href="#services">What we arrange</a>
-        <a href="#partners">Partners</a>
-        <a class="nav-cta" href="#contact">Tell us what you need</a>
+        <a href="#surprise" data-th="เซอร์ไพรส์" data-en="Surprise">เซอร์ไพรส์</a>
+        <a href="#services" data-th="บริการ" data-en="Services">บริการ</a>
+        <a href="#partners" data-th="พาร์ตเนอร์" data-en="Partners">พาร์ตเนอร์</a>
+        <a class="nav-cta" href="#contact" data-th="เริ่มจัดงาน" data-en="Start a request">เริ่มจัดงาน</a>
+        <div class="language-switch" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="th" onclick="setLanguage('th')">ไทย</button>
+          <span>/</span>
+          <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -27,110 +32,80 @@
     <section class="hero">
       <div class="hero-image" role="img" aria-label="Soft floral table setting with candlelight"></div>
       <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <div class="hero-copy">
-          <p class="eyebrow light">Gatherings, softly put together</p>
-          <h1>Beautiful moments,<br><em>arranged for you.</em></h1>
-          <p class="hero-text">งานแต่ง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ งานเล็ก งานใหญ่ หรือไอเดียที่ยังเรียบเรียงไม่ถูก — เล่ามาได้เลย เราช่วยจัดคน จัดของ และจัดทุกอย่างให้เข้าที่</p>
-          <a class="btn hero-btn" href="#contact">Tell us what you need</a>
-        </div>
-      </div>
+      <div class="hero-content container"><div class="hero-copy">
+        <p class="eyebrow light" data-th="Gather Cute · เราจัดให้" data-en="Gatherings, softly put together">Gather Cute · เราจัดให้</p>
+        <h1 data-th-html="ช่วงเวลาพิเศษ<br><em>เราช่วยจัดให้คุณ</em>" data-en-html="Beautiful moments,<br><em>arranged for you.</em>">ช่วงเวลาพิเศษ<br><em>เราช่วยจัดให้คุณ</em></h1>
+        <p class="hero-text" data-th="งานแต่ง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ เซอร์ไพรส์ งานเล็ก งานใหญ่ หรือไอเดียที่ยังเรียบเรียงไม่ถูก — เล่ามาได้เลย เราช่วยจัดคน จัดของ และจัดทุกอย่างให้เข้าที่" data-en="Weddings, private tables, flowers, parties, surprises, small moments or big celebrations — tell us what you need and we’ll arrange the people, pieces and details.">งานแต่ง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ เซอร์ไพรส์ งานเล็ก งานใหญ่ หรือไอเดียที่ยังเรียบเรียงไม่ถูก — เล่ามาได้เลย เราช่วยจัดคน จัดของ และจัดทุกอย่างให้เข้าที่</p>
+        <a class="btn hero-btn" href="#contact" data-th="บอกเราว่าอยากจัดอะไร" data-en="Tell us what you need">บอกเราว่าอยากจัดอะไร</a>
+      </div></div>
     </section>
 
     <section id="surprise" class="surprise-feature">
-      <div class="surprise-visual" role="img" aria-label="Exciting cozy surprise setup with balloons flowers gifts and candlelight"></div>
+      <div class="surprise-visual" role="img" aria-label="Surprise setup with balloons flowers and gifts"></div>
       <div class="surprise-panel">
-        <p class="eyebrow">New · Surprise by Budget</p>
+        <p class="eyebrow" data-th="ใหม่ · เซอร์ไพรส์ตามงบ" data-en="New · Surprise by Budget">ใหม่ · เซอร์ไพรส์ตามงบ</p>
         <div class="surprise-badge">🎈 🌷 🎁</div>
-        <h2>Tell us your budget.<br><em>We’ll create the surprise.</em></h2>
-        <p class="surprise-lead">รับจัดเซอร์ไพรส์ตามงบประมาณ — วันเกิด ขอแต่งงาน anniversary, congratulations หรืออยากทำให้ใครสักคนยิ้ม โดยไม่ต้องคิดเองทุกอย่าง</p>
-        <div class="budget-chips"><span>฿1,500+</span><span>฿3,000+</span><span>฿5,000+</span><span>Custom</span></div>
-        <p class="surprise-note">บอกคนรับ เมือง/ประเทศ โอกาส mood และงบมา เราช่วยหาไอเดีย ดอกไม้ ลูกโป่ง เค้ก ของขวัญ ร้านอาหาร หรือทีมที่เหมาะกับโจทย์ให้</p>
-        <a class="btn primary" href="#contact">Plan my surprise ✦</a>
+        <h2 data-th-html="บอกงบมา<br><em>เดี๋ยวเราคิดเซอร์ไพรส์ให้</em>" data-en-html="Tell us your budget.<br><em>We’ll create the surprise.</em>">บอกงบมา<br><em>เดี๋ยวเราคิดเซอร์ไพรส์ให้</em></h2>
+        <p class="surprise-lead" data-th="รับจัดเซอร์ไพรส์ตามงบประมาณ — วันเกิด ขอแต่งงาน วันครบรอบ แสดงความยินดี หรือแค่อยากทำให้ใครสักคนยิ้ม โดยไม่ต้องคิดเองทุกอย่าง" data-en="Surprises designed around your budget — birthdays, proposals, anniversaries, congratulations, or simply making someone smile without planning every detail yourself.">รับจัดเซอร์ไพรส์ตามงบประมาณ — วันเกิด ขอแต่งงาน วันครบรอบ แสดงความยินดี หรือแค่อยากทำให้ใครสักคนยิ้ม โดยไม่ต้องคิดเองทุกอย่าง</p>
+        <div class="budget-chips"><span>฿1,500+</span><span>฿3,000+</span><span>฿5,000+</span><span data-th="กำหนดงบเอง" data-en="Custom">กำหนดงบเอง</span></div>
+        <p class="surprise-note" data-th="บอกคนรับ เมือง/ประเทศ โอกาส สไตล์ที่ชอบ และงบมา เราช่วยหาไอเดีย ดอกไม้ ลูกโป่ง เค้ก ของขวัญ ร้านอาหาร หรือทีมที่เหมาะกับโจทย์ให้" data-en="Tell us the recipient, city/country, occasion, mood and budget. We can source ideas, flowers, balloons, cakes, gifts, restaurants or the right local team.">บอกคนรับ เมือง/ประเทศ โอกาส สไตล์ที่ชอบ และงบมา เราช่วยหาไอเดีย ดอกไม้ ลูกโป่ง เค้ก ของขวัญ ร้านอาหาร หรือทีมที่เหมาะกับโจทย์ให้</p>
+        <a class="btn primary" href="#contact" data-th="ให้เราจัดเซอร์ไพรส์ ✦" data-en="Plan my surprise ✦">ให้เราจัดเซอร์ไพรส์ ✦</a>
       </div>
     </section>
 
     <section class="intro container">
-      <p class="script-line">You bring the reason. We gather the rest.</p>
-      <h2>ไม่ต้องเริ่มจากการรู้ว่าต้องจ้างใครบ้าง</h2>
-      <p>แค่บอกเราว่าอยากให้วันนั้นรู้สึกแบบไหน เราช่วยหา venue, florist, caterer, stylist, photographer, host หรือทีมใหญ่ที่เหมาะกับงาน แล้วประสานให้เป็นภาพเดียวกัน</p>
+      <p class="script-line" data-th="คุณบอกเหตุผล ที่เหลือเรารวบรวมให้" data-en="You bring the reason. We gather the rest.">คุณบอกเหตุผล ที่เหลือเรารวบรวมให้</p>
+      <h2 data-th="ไม่ต้องเริ่มจากการรู้ว่าต้องจ้างใครบ้าง" data-en="You don’t need to know who to hire first.">ไม่ต้องเริ่มจากการรู้ว่าต้องจ้างใครบ้าง</h2>
+      <p data-th="แค่บอกเราว่าอยากให้วันนั้นรู้สึกแบบไหน เราช่วยหา สถานที่ ร้านดอกไม้ อาหาร สไตลิสต์ ช่างภาพ พิธีกร หรือทีมใหญ่ที่เหมาะกับงาน แล้วประสานให้เป็นภาพเดียวกัน" data-en="Tell us how you want the moment to feel. We can source a venue, florist, caterer, stylist, photographer, host or a larger production team and coordinate everything together.">แค่บอกเราว่าอยากให้วันนั้นรู้สึกแบบไหน เราช่วยหา สถานที่ ร้านดอกไม้ อาหาร สไตลิสต์ ช่างภาพ พิธีกร หรือทีมใหญ่ที่เหมาะกับงาน แล้วประสานให้เป็นภาพเดียวกัน</p>
     </section>
 
     <section id="services" class="service-gallery container">
-      <article class="service-shot tall shot-wedding"><div class="shot-copy"><span>01</span><h3>Weddings</h3><p>From intimate ceremonies to full celebrations.</p></div></article>
-      <article class="service-shot shot-table"><div class="shot-copy"><span>02</span><h3>Private Tables</h3><p>Dinner styling, flowers, candles and atmosphere.</p></div></article>
-      <article class="service-shot shot-flowers"><div class="shot-copy"><span>03</span><h3>Flowers</h3><p>Bouquets, installations, gifting and floral moments.</p></div></article>
-      <article class="service-shot wide shot-party"><div class="shot-copy"><span>04</span><h3>Parties & Events</h3><p>Birthdays, brand gatherings, launches and private celebrations.</p></div></article>
-      <article class="service-shot wide shot-special"><div class="shot-copy"><span>05</span><h3>Special Requests</h3><p>If it needs arranging, sourcing or coordinating, ask us.</p></div></article>
+      <article class="service-shot tall shot-wedding"><div class="shot-copy"><span>01</span><h3 data-th="งานแต่งงาน" data-en="Weddings">งานแต่งงาน</h3><p data-th="ตั้งแต่งานเล็กอบอุ่นจนถึงงานฉลองเต็มรูปแบบ" data-en="From intimate ceremonies to full celebrations.">ตั้งแต่งานเล็กอบอุ่นจนถึงงานฉลองเต็มรูปแบบ</p></div></article>
+      <article class="service-shot shot-table"><div class="shot-copy"><span>02</span><h3 data-th="จัดโต๊ะอาหาร" data-en="Private Tables">จัดโต๊ะอาหาร</h3><p data-th="ดินเนอร์ ดอกไม้ เทียน และบรรยากาศ" data-en="Dinner styling, flowers, candles and atmosphere.">ดินเนอร์ ดอกไม้ เทียน และบรรยากาศ</p></div></article>
+      <article class="service-shot shot-flowers"><div class="shot-copy"><span>03</span><h3 data-th="ดอกไม้" data-en="Flowers">ดอกไม้</h3><p data-th="ช่อดอกไม้ จัดดอกไม้หน้างาน ของขวัญ และโมเมนต์พิเศษ" data-en="Bouquets, installations, gifting and floral moments.">ช่อดอกไม้ จัดดอกไม้หน้างาน ของขวัญ และโมเมนต์พิเศษ</p></div></article>
+      <article class="service-shot wide shot-party"><div class="shot-copy"><span>04</span><h3 data-th="ปาร์ตี้และอีเวนต์" data-en="Parties & Events">ปาร์ตี้และอีเวนต์</h3><p data-th="วันเกิด งานแบรนด์ งานเปิดตัว และงานเลี้ยงส่วนตัว" data-en="Birthdays, brand gatherings, launches and private celebrations.">วันเกิด งานแบรนด์ งานเปิดตัว และงานเลี้ยงส่วนตัว</p></div></article>
+      <article class="service-shot wide shot-special"><div class="shot-copy"><span>05</span><h3 data-th="คำขอพิเศษ" data-en="Special Requests">คำขอพิเศษ</h3><p data-th="ถ้าต้องหา จัด หรือประสานงาน ลองบอกเราได้" data-en="If it needs arranging, sourcing or coordinating, ask us.">ถ้าต้องหา จัด หรือประสานงาน ลองบอกเราได้</p></div></article>
     </section>
 
-    <section id="mood" class="mood-section">
-      <div class="container mood-grid">
-        <div class="mood-copy">
-          <p class="eyebrow">How it works</p>
-          <h2>One message first.<br>Everything else can come later.</h2>
-          <div class="steps">
-            <div><strong>01</strong><p>Tell us the occasion, mood, date and rough budget.</p></div>
-            <div><strong>02</strong><p>We shortlist the right people, places and ideas.</p></div>
-            <div><strong>03</strong><p>We coordinate the pieces until it feels effortless.</p></div>
-          </div>
-        </div>
-        <div class="mood-image" role="img" aria-label="Cozy bouquet and candlelight detail"></div>
-      </div>
-    </section>
+    <section id="mood" class="mood-section"><div class="container mood-grid">
+      <div class="mood-copy"><p class="eyebrow" data-th="ขั้นตอน" data-en="How it works">ขั้นตอน</p><h2 data-th-html="เริ่มจากข้อความเดียว<br>ที่เหลือค่อยจัดกัน" data-en-html="One message first.<br>Everything else can come later.">เริ่มจากข้อความเดียว<br>ที่เหลือค่อยจัดกัน</h2><div class="steps">
+        <div><strong>01</strong><p data-th="บอกโอกาส สไตล์ วันที่ และงบคร่าว ๆ" data-en="Tell us the occasion, mood, date and rough budget.">บอกโอกาส สไตล์ วันที่ และงบคร่าว ๆ</p></div>
+        <div><strong>02</strong><p data-th="เราช่วยคัดคน สถานที่ และไอเดียที่เหมาะ" data-en="We shortlist the right people, places and ideas.">เราช่วยคัดคน สถานที่ และไอเดียที่เหมาะ</p></div>
+        <div><strong>03</strong><p data-th="เราประสานทุกส่วนให้เข้ากันจนพร้อมใช้งานจริง" data-en="We coordinate the pieces until it feels effortless.">เราประสานทุกส่วนให้เข้ากันจนพร้อมใช้งานจริง</p></div>
+      </div></div><div class="mood-image" role="img" aria-label="Cozy bouquet and candlelight detail"></div>
+    </div></section>
 
-    <section class="quote-band"><div class="container"><p>“Cozy doesn’t mean small. It means every detail feels considered.”</p></div></section>
+    <section class="quote-band"><div class="container"><p data-th="“Cozy ไม่ได้แปลว่างานเล็ก แต่คือทุกรายละเอียดถูกคิดมาแล้ว”" data-en="“Cozy doesn’t mean small. It means every detail feels considered.”">“Cozy ไม่ได้แปลว่างานเล็ก แต่คือทุกรายละเอียดถูกคิดมาแล้ว”</p></div></section>
 
-    <section id="partners" class="partners container">
-      <div class="partner-image" role="img" aria-label="Elegant long table with floral styling"></div>
-      <div class="partner-copy">
-        <p class="eyebrow">For venues & vendors</p>
-        <h2>Good people make beautiful gatherings.</h2>
-        <p>คาเฟ่ ร้านอาหาร venue, florist, caterer, photographer, stylist, entertainment, production หรือ creative service — ส่งโปรไฟล์ไว้ได้ เราจะเลือกจับคู่ตามงานที่เหมาะกับคุณ</p>
-        <a class="text-link" href="#contact">Become a partner →</a>
-      </div>
-    </section>
+    <section id="partners" class="partners container"><div class="partner-image" role="img" aria-label="Elegant long table with floral styling"></div><div class="partner-copy">
+      <p class="eyebrow" data-th="สำหรับสถานที่และผู้ให้บริการ" data-en="For venues & vendors">สำหรับสถานที่และผู้ให้บริการ</p>
+      <h2 data-th="คนเก่ง ๆ ทำให้งานสวยเกิดขึ้นได้" data-en="Good people make beautiful gatherings.">คนเก่ง ๆ ทำให้งานสวยเกิดขึ้นได้</h2>
+      <p data-th="คาเฟ่ ร้านอาหาร สถานที่ ร้านดอกไม้ อาหาร ช่างภาพ สไตลิสต์ บันเทิง โปรดักชัน หรือบริการสร้างสรรค์ — ส่งโปรไฟล์ไว้ได้ เราจะเลือกจับคู่ตามงานที่เหมาะกับคุณ" data-en="Cafés, restaurants, venues, florists, caterers, photographers, stylists, entertainment, production and creative services — send us your profile and we’ll match you with suitable requests.">คาเฟ่ ร้านอาหาร สถานที่ ร้านดอกไม้ อาหาร ช่างภาพ สไตลิสต์ บันเทิง โปรดักชัน หรือบริการสร้างสรรค์ — ส่งโปรไฟล์ไว้ได้ เราจะเลือกจับคู่ตามงานที่เหมาะกับคุณ</p>
+      <a class="text-link" href="#contact" data-th="สมัครเป็นพาร์ตเนอร์ →" data-en="Become a partner →">สมัครเป็นพาร์ตเนอร์ →</a>
+    </div></section>
 
-    <section id="contact" class="contact-section">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <p class="eyebrow">Start with a little note</p>
-          <h2>What are we<br><em>gathering for?</em></h2>
-          <p>Choose the option that matches what you want to do. If you want us to arrange something for you, choose from “I need a service.” If you provide a venue, flowers, catering, photography or another service, choose “I want to become a partner.”</p>
-        </div>
-        <form class="contact-form" onsubmit="submitForm(event)">
-          <label>What would you like to do?
-            <select required>
-              <option value="">Choose one</option>
-              <optgroup label="I need a service">
-                <option>Surprise by Budget</option>
-                <option>Wedding</option>
-                <option>Private dinner / table styling</option>
-                <option>Flowers</option>
-                <option>Party / event</option>
-                <option>Venue / vendor sourcing</option>
-                <option>Special request</option>
-              </optgroup>
-              <optgroup label="I want to become a partner">
-                <option>List my venue</option>
-                <option>List my flower / florist service</option>
-                <option>List my catering service</option>
-                <option>List my photography / video service</option>
-                <option>List my styling / decoration service</option>
-                <option>List another service</option>
-              </optgroup>
-            </select>
-          </label>
-          <label>Your name / brand<input required type="text" placeholder="Your name or brand" /></label>
-          <label>Tell us a little<textarea required rows="6" placeholder="Date, city/country, occasion, mood, budget — or what service you would like to list... "></textarea></label>
-          <button class="btn primary full" type="submit">Send to Gather Cute ♡</button>
-          <div id="form-message" class="form-message" aria-live="polite"></div>
-        </form>
-      </div>
-    </section>
+    <section id="contact" class="contact-section"><div class="container contact-grid">
+      <div class="contact-copy"><p class="eyebrow" data-th="เริ่มจากตรงนี้" data-en="Start with a little note">เริ่มจากตรงนี้</p><h2 data-th-html="วันนี้อยากให้เรา<br><em>ช่วยจัดอะไร?</em>" data-en-html="What are we<br><em>gathering for?</em>">วันนี้อยากให้เรา<br><em>ช่วยจัดอะไร?</em></h2><p data-th="ถ้าต้องการให้เราจัดงานหรือหาอะไรให้ เลือก ‘ต้องการใช้บริการ’ ถ้าคุณมีสถานที่หรือมีบริการและอยากรับงานกับเรา เลือก ‘สมัครเป็นพาร์ตเนอร์’" data-en="If you want us to arrange something, choose ‘I need a service.’ If you provide a venue or service and want to receive suitable work, choose ‘I want to become a partner.’">ถ้าต้องการให้เราจัดงานหรือหาอะไรให้ เลือก ‘ต้องการใช้บริการ’ ถ้าคุณมีสถานที่หรือมีบริการและอยากรับงานกับเรา เลือก ‘สมัครเป็นพาร์ตเนอร์’</p></div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <label><span data-th="คุณต้องการทำอะไร?" data-en="What would you like to do?">คุณต้องการทำอะไร?</span>
+          <select id="service-select" required>
+            <option value="" data-th="เลือกหนึ่งรายการ" data-en="Choose one">เลือกหนึ่งรายการ</option>
+            <optgroup label="ต้องการใช้บริการ" data-th-label="ต้องการใช้บริการ" data-en-label="I need a service">
+              <option data-th="เซอร์ไพรส์ตามงบ" data-en="Surprise by Budget">เซอร์ไพรส์ตามงบ</option><option data-th="งานแต่งงาน" data-en="Wedding">งานแต่งงาน</option><option data-th="ดินเนอร์ / จัดโต๊ะอาหาร" data-en="Private dinner / table styling">ดินเนอร์ / จัดโต๊ะอาหาร</option><option data-th="ดอกไม้" data-en="Flowers">ดอกไม้</option><option data-th="ปาร์ตี้ / อีเวนต์" data-en="Party / event">ปาร์ตี้ / อีเวนต์</option><option data-th="หาสถานที่ / ผู้ให้บริการ" data-en="Venue / vendor sourcing">หาสถานที่ / ผู้ให้บริการ</option><option data-th="คำขอพิเศษ" data-en="Special request">คำขอพิเศษ</option>
+            </optgroup>
+            <optgroup label="สมัครเป็นพาร์ตเนอร์" data-th-label="สมัครเป็นพาร์ตเนอร์" data-en-label="I want to become a partner">
+              <option data-th="ลงสถานที่ของฉัน" data-en="List my venue">ลงสถานที่ของฉัน</option><option data-th="ลงบริการร้านดอกไม้" data-en="List my flower / florist service">ลงบริการร้านดอกไม้</option><option data-th="ลงบริการอาหาร / Catering" data-en="List my catering service">ลงบริการอาหาร / Catering</option><option data-th="ลงบริการถ่ายภาพ / วิดีโอ" data-en="List my photography / video service">ลงบริการถ่ายภาพ / วิดีโอ</option><option data-th="ลงบริการจัดตกแต่ง" data-en="List my styling / decoration service">ลงบริการจัดตกแต่ง</option><option data-th="ลงบริการอื่น ๆ" data-en="List another service">ลงบริการอื่น ๆ</option>
+            </optgroup>
+          </select>
+        </label>
+        <label><span data-th="ชื่อ / แบรนด์" data-en="Your name / brand">ชื่อ / แบรนด์</span><input required type="text" data-th-placeholder="ชื่อของคุณหรือชื่อแบรนด์" data-en-placeholder="Your name or brand" placeholder="ชื่อของคุณหรือชื่อแบรนด์" /></label>
+        <label><span data-th="เล่าให้เราฟังนิดนึง" data-en="Tell us a little">เล่าให้เราฟังนิดนึง</span><textarea required rows="6" data-th-placeholder="วัน เมือง/ประเทศ โอกาส สไตล์ งบ หรือบริการที่คุณอยากลง..." data-en-placeholder="Date, city/country, occasion, mood, budget — or what service you would like to list..." placeholder="วัน เมือง/ประเทศ โอกาส สไตล์ งบ หรือบริการที่คุณอยากลง..."></textarea></label>
+        <button class="btn primary full" type="submit" data-th="ส่งให้ Gather Cute ♡" data-en="Send to Gather Cute ♡">ส่งให้ Gather Cute ♡</button><div id="form-message" class="form-message" aria-live="polite"></div>
+      </form>
+    </div></section>
   </main>
 
-  <footer><div class="container footer-inner"><div><strong>Gather Cute</strong><p>Beautiful gatherings, arranged for you.</p></div><div class="footer-links"><a href="#surprise">Surprise</a><a href="#services">Services</a><a href="#partners">Partners</a><a href="#contact">Contact</a></div></div></footer>
+  <footer><div class="container footer-inner"><div><strong>Gather Cute</strong><p data-th="ช่วงเวลาพิเศษ เราช่วยจัดให้คุณ" data-en="Beautiful gatherings, arranged for you.">ช่วงเวลาพิเศษ เราช่วยจัดให้คุณ</p></div><div class="footer-links"><a href="#surprise" data-th="เซอร์ไพรส์" data-en="Surprise">เซอร์ไพรส์</a><a href="#services" data-th="บริการ" data-en="Services">บริการ</a><a href="#partners" data-th="พาร์ตเนอร์" data-en="Partners">พาร์ตเนอร์</a><a href="#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
