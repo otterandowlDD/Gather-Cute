@@ -96,25 +96,34 @@
         <div class="contact-copy">
           <p class="eyebrow">Start with a little note</p>
           <h2>What are we<br><em>gathering for?</em></h2>
-          <p>ไม่ต้องมี brief เป๊ะก็ได้ บอกแค่ว่าจัดอะไร วันไหน คนประมาณกี่คน ชอบ mood แบบไหน และงบคร่าว ๆ เท่าไร</p>
+          <p>Choose the option that matches what you want to do. If you want us to arrange something for you, choose from “I need a service.” If you provide a venue, flowers, catering, photography or another service, choose “I want to become a partner.”</p>
         </div>
         <form class="contact-form" onsubmit="submitForm(event)">
-          <label>What do you need?
+          <label>What would you like to do?
             <select required>
               <option value="">Choose one</option>
-              <option>Surprise by Budget</option>
-              <option>Wedding</option>
-              <option>Private dinner / table styling</option>
-              <option>Flowers</option>
-              <option>Party / event</option>
-              <option>Venue / vendor sourcing</option>
-              <option>Special request</option>
-              <option>Partner with Gather Cute</option>
+              <optgroup label="I need a service">
+                <option>Surprise by Budget</option>
+                <option>Wedding</option>
+                <option>Private dinner / table styling</option>
+                <option>Flowers</option>
+                <option>Party / event</option>
+                <option>Venue / vendor sourcing</option>
+                <option>Special request</option>
+              </optgroup>
+              <optgroup label="I want to become a partner">
+                <option>List my venue</option>
+                <option>List my flower / florist service</option>
+                <option>List my catering service</option>
+                <option>List my photography / video service</option>
+                <option>List my styling / decoration service</option>
+                <option>List another service</option>
+              </optgroup>
             </select>
           </label>
           <label>Your name / brand<input required type="text" placeholder="Your name or brand" /></label>
-          <label>Tell us a little<textarea required rows="6" placeholder="Date, city/country, occasion, mood, budget, or simply what you have in mind..."></textarea></label>
-          <button class="btn primary full" type="submit">Send your idea ♡</button>
+          <label>Tell us a little<textarea required rows="6" placeholder="Date, city/country, occasion, mood, budget — or what service you would like to list... "></textarea></label>
+          <button class="btn primary full" type="submit">Send to Gather Cute ♡</button>
           <div id="form-message" class="form-message" aria-live="polite"></div>
         </form>
       </div>
