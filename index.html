@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gather Cute — Cozy Events, Weddings, Flowers & Styling</title>
-  <meta name="description" content="Gather Cute รับจัดงานแต่ง งานเลี้ยง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ และ special requests พร้อมช่วยหา venue และ vendor ให้ครบในที่เดียว" />
+  <meta name="description" content="Gather Cute รับจัดเซอร์ไพรส์ตามงบ งานแต่ง งานเลี้ยง โต๊ะอาหาร ดอกไม้ ปาร์ตี้ และ special requests พร้อมช่วยหา venue และ vendor ให้ครบในที่เดียว" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
     <nav class="nav container">
       <a class="brand" href="#top">Gather Cute</a>
       <div class="nav-links">
+        <a href="#surprise">Surprise</a>
         <a href="#services">What we arrange</a>
-        <a href="#mood">Mood</a>
         <a href="#partners">Partners</a>
         <a class="nav-cta" href="#contact">Tell us what you need</a>
       </div>
@@ -37,6 +37,19 @@
       </div>
     </section>
 
+    <section id="surprise" class="surprise-feature">
+      <div class="surprise-visual" role="img" aria-label="Exciting cozy surprise setup with balloons flowers gifts and candlelight"></div>
+      <div class="surprise-panel">
+        <p class="eyebrow">New · Surprise by Budget</p>
+        <div class="surprise-badge">🎈 🌷 🎁</div>
+        <h2>Tell us your budget.<br><em>We’ll create the surprise.</em></h2>
+        <p class="surprise-lead">รับจัดเซอร์ไพรส์ตามงบประมาณ — วันเกิด ขอแต่งงาน anniversary, congratulations หรืออยากทำให้ใครสักคนยิ้ม โดยไม่ต้องคิดเองทุกอย่าง</p>
+        <div class="budget-chips"><span>฿1,500+</span><span>฿3,000+</span><span>฿5,000+</span><span>Custom</span></div>
+        <p class="surprise-note">บอกคนรับ เมือง/ประเทศ โอกาส mood และงบมา เราช่วยหาไอเดีย ดอกไม้ ลูกโป่ง เค้ก ของขวัญ ร้านอาหาร หรือทีมที่เหมาะกับโจทย์ให้</p>
+        <a class="btn primary" href="#contact">Plan my surprise ✦</a>
+      </div>
+    </section>
+
     <section class="intro container">
       <p class="script-line">You bring the reason. We gather the rest.</p>
       <h2>ไม่ต้องเริ่มจากการรู้ว่าต้องจ้างใครบ้าง</h2>
@@ -44,21 +57,11 @@
     </section>
 
     <section id="services" class="service-gallery container">
-      <article class="service-shot tall shot-wedding">
-        <div class="shot-copy"><span>01</span><h3>Weddings</h3><p>From intimate ceremonies to full celebrations.</p></div>
-      </article>
-      <article class="service-shot shot-table">
-        <div class="shot-copy"><span>02</span><h3>Private Tables</h3><p>Dinner styling, flowers, candles and atmosphere.</p></div>
-      </article>
-      <article class="service-shot shot-flowers">
-        <div class="shot-copy"><span>03</span><h3>Flowers</h3><p>Bouquets, installations, gifting and floral moments.</p></div>
-      </article>
-      <article class="service-shot wide shot-party">
-        <div class="shot-copy"><span>04</span><h3>Parties & Events</h3><p>Birthdays, brand gatherings, launches and private celebrations.</p></div>
-      </article>
-      <article class="service-shot wide shot-special">
-        <div class="shot-copy"><span>05</span><h3>Special Requests</h3><p>If it needs arranging, sourcing or coordinating, ask us.</p></div>
-      </article>
+      <article class="service-shot tall shot-wedding"><div class="shot-copy"><span>01</span><h3>Weddings</h3><p>From intimate ceremonies to full celebrations.</p></div></article>
+      <article class="service-shot shot-table"><div class="shot-copy"><span>02</span><h3>Private Tables</h3><p>Dinner styling, flowers, candles and atmosphere.</p></div></article>
+      <article class="service-shot shot-flowers"><div class="shot-copy"><span>03</span><h3>Flowers</h3><p>Bouquets, installations, gifting and floral moments.</p></div></article>
+      <article class="service-shot wide shot-party"><div class="shot-copy"><span>04</span><h3>Parties & Events</h3><p>Birthdays, brand gatherings, launches and private celebrations.</p></div></article>
+      <article class="service-shot wide shot-special"><div class="shot-copy"><span>05</span><h3>Special Requests</h3><p>If it needs arranging, sourcing or coordinating, ask us.</p></div></article>
     </section>
 
     <section id="mood" class="mood-section">
@@ -76,11 +79,7 @@
       </div>
     </section>
 
-    <section class="quote-band">
-      <div class="container">
-        <p>“Cozy doesn’t mean small. It means every detail feels considered.”</p>
-      </div>
-    </section>
+    <section class="quote-band"><div class="container"><p>“Cozy doesn’t mean small. It means every detail feels considered.”</p></div></section>
 
     <section id="partners" class="partners container">
       <div class="partner-image" role="img" aria-label="Elegant long table with floral styling"></div>
@@ -103,6 +102,7 @@
           <label>What do you need?
             <select required>
               <option value="">Choose one</option>
+              <option>Surprise by Budget</option>
               <option>Wedding</option>
               <option>Private dinner / table styling</option>
               <option>Flowers</option>
@@ -112,12 +112,8 @@
               <option>Partner with Gather Cute</option>
             </select>
           </label>
-          <label>Your name / brand
-            <input required type="text" placeholder="Your name or brand" />
-          </label>
-          <label>Tell us a little
-            <textarea required rows="6" placeholder="Date, area, number of guests, mood, budget, or simply what you have in mind..."></textarea>
-          </label>
+          <label>Your name / brand<input required type="text" placeholder="Your name or brand" /></label>
+          <label>Tell us a little<textarea required rows="6" placeholder="Date, city/country, occasion, mood, budget, or simply what you have in mind..."></textarea></label>
           <button class="btn primary full" type="submit">Send your idea ♡</button>
           <div id="form-message" class="form-message" aria-live="polite"></div>
         </form>
@@ -125,13 +121,7 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div><strong>Gather Cute</strong><p>Beautiful gatherings, arranged for you.</p></div>
-      <div class="footer-links"><a href="#services">Services</a><a href="#partners">Partners</a><a href="#contact">Contact</a></div>
-    </div>
-  </footer>
-
+  <footer><div class="container footer-inner"><div><strong>Gather Cute</strong><p>Beautiful gatherings, arranged for you.</p></div><div class="footer-links"><a href="#surprise">Surprise</a><a href="#services">Services</a><a href="#partners">Partners</a><a href="#contact">Contact</a></div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
