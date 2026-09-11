@@ -43,8 +43,8 @@ function submitForm(event){
   if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(inquiry).catch(() => {});
 
   messageBox.textContent = currentLanguage === 'th'
-    ? 'กำลังพาไป LINE @nooning_nn 💚 เตรียมข้อความไว้ให้แล้ว สามารถวางในแชตได้เลย'
-    : 'Opening LINE @nooning_nn 💚 Your inquiry has been copied and is ready to paste into the chat.';
+    ? 'กำลังพาไป LINE @290rxkzl 💚 เตรียมข้อความไว้ให้แล้ว สามารถวางในแชตได้เลย'
+    : 'Opening LINE @290rxkzl 💚 Your inquiry has been copied and is ready to paste into the chat.';
 
-  window.open('https://line.me/ti/p/~@nooning_nn', '_blank', 'noopener,noreferrer');
+  window.open('https://line.me/ti/p/~@290rxkzl', '_blank', 'noopener,noreferrer');
 }
